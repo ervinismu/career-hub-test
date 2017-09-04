@@ -10,12 +10,6 @@ import (
 var db *gorm.DB
 var err error
 
-type Person struct {
- ID uint `json:"id"`
- FirstName string `json:"firstname"`
- LastName string `json:"lastname"`
- City string `json:"city"`
-}
 
 func main() {
  // NOTE: See we’re using = to assign the global var
@@ -27,11 +21,6 @@ func main() {
  defer db.Close()
  db.AutoMigrate(&Person{})
  r := gin.Default()
- r.GET("/people/", GetPeople)
- r.GET("/people/:id", GetPerson)
- r.POST("/people", CreatePerson)
- r.PUT("/people/:id", UpdatePerson)
- r.DELETE("/people/:id", DeletePerson)
 
  r.Run(":8080")
 }
