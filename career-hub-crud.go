@@ -52,6 +52,7 @@ func UpdatePerson (c *gin.Context) {
 	c.JSON(200, person)
 }
 
+// Untuk menambahkan user
 func CreatePerson (c *gin.Context) {
 	
 	var person Person
