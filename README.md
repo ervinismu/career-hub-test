@@ -27,3 +27,5 @@ Testing your url with Postman or curl
 | Create Notes         | `<your_url>/notes`     |   **POST**   |
 | Delete Notes         | `<your_url>/notes`     |   **DELETE** |
 | Update Notes         | `<your_url>/notes`     |   **PUT** |
+
+## MIT | workhard.ervin@gmail.com
