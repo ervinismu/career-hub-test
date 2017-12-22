@@ -11,4 +11,19 @@
 
 2.Untuk menanggani pengiriman data pada backend dari mobile di RestApi, kita menggunakkan JWT (Json Web Token) untuk setiap pengaksesan url Api yang menggandung data sensitif, setiap ada yang meng akses harus menyertakan Token agar kita dapat memastikan bahwa yang mengakses untuk mengedit/mengambil data adalah user/perangkat yang valid atau sudah terdaftar pada sistem kita.
 
-3.
+3. How to run apps ?
+- Install Go-lang
+- go run main.go  
+
+# Testing in Url
+Testing your url with Postman or curl
+
+| Name                | Url                   | Method   |
+| --------------------|:---------------------:|:--------:|
+| Register            | `<your_url>/register` |   **POST**   |
+| Login               | `<your_url>/login`    |   **POST**   |
+| Logout              | `<your_url>/logout`   |   **GET**    |
+| Get All Notes        | `<your_url>/notes`     |   **GET**    |
+| Create Notes         | `<your_url>/notes`     |   **POST**   |
+| Delete Notes         | `<your_url>/notes`     |   **DELETE** |
+| Update Notes         | `<your_url>/notes`     |   **PUT** |
