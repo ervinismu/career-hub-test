@@ -1,9 +1,14 @@
 # career-hub-test
-1. Saya memilih desain seperti ini karena desain ini menurut saya aman untuk pengguna,saat pengguna belum login,pengguna dapat melihat menu menu makanan dan detail makanan agar pengguna semakin tertarik dengan aplikasi,tetapi jika pengguna akan memesan harus melakukkan login terlebih dahulu agar transaksi aman.
-- tools : Visualstudiocode, github, gin(golang-framework)
-alasan menggunakkan tools tersebut karena bersifat gratis, mudah dalam penggunaan, dan memudahkan untuk pengerjaan project secara tim
-- note: desain ada di file jpg micro-service.jpg
+1. 
 
-2. Untuk menanggani keamanan data pada Backend dan Mobile apps kita nanti menggunakkan login, jika ingin mengakses data aplikasi pengguna harus login terlebih dahulu setelah login nanti pengguna mendapatkan acces_token,jadi nanti access_token digunakkan untuk memastikkan bahwa itu adalah user yang sesungguhnya
+- tools and Lang :  
+1. Golang = karena golang adalah bahasa yang mumpuni, cepat dan bagus untuk dibuat sebagai service backend  
+2. JWT(Json Web Token) = karena digunakkan sebagai pengaman untuk backend RestApi, agar data lebih aman, pengaksesan data backend dilakukkan menggunakkan JWT untuk authentication
+3. VsCode = karena ini termasuk tools editor yang cepat dan ringkas, ada banyak plugin yang bisa digunakkan untuk membantu develop  
+4. CI/CD (Travis.ci, Circle.ci, Gitlab.ci) = karena agar memudahkan kita untuk melakukkan deploy produk, agar automation oleh tools dan mengurangi kesalahan Human Error  
+5. AWS(Amazon Web Service) = karena mudah dalam penggunaannya  
+6. Gitlab = karena untuk memanajemen kode kita saat dikerjakan secara team agar lebih mudah
 
-3. crud di file career-hub-crud.go
+2.Untuk menanggani pengiriman data pada backend dari mobile di RestApi, kita menggunakkan JWT (Json Web Token) untuk setiap pengaksesan url Api yang menggandung data sensitif, setiap ada yang meng akses harus menyertakan Token agar kita dapat memastikan bahwa yang mengakses untuk mengedit/mengambil data adalah user/perangkat yang valid atau sudah terdaftar pada sistem kita.
+
+3.
